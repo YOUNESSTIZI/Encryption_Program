@@ -1,28 +1,27 @@
-/*package com.luv2code.springbootDemo.myApp.entity;
+package com.luv2code.springbootDemo.myApp.entity;
 
-import org.springframework.stereotype.Component;
 
-public class IFrequenceImpl implements IFrequence {
+
+public class Frequence {
 
 	private int frequence ;
 	
-	public IFrequenceImpl() {
+	public Frequence() {
 		
 	}
 	
-	public  IFrequenceImpl(int frequence) {
+	public  Frequence(int frequence) {
 		this.setFrequence(frequence);
 	}
 	
 	
 	
 	
-	@Override
 	public int getFrequence() {
 		return this.frequence;
 	}
 
-	@Override
+	
 	public void setFrequence(int frequence) {
 		this.frequence = frequence;
 	}
@@ -38,4 +37,3 @@ public class IFrequenceImpl implements IFrequence {
 	
 
 }
- */

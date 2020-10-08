@@ -1,4 +1,5 @@
-/*package com.luv2code.springbootDemo.myApp.entity;
+package com.luv2code.springbootDemo.myApp.Repository;
+/*
 
 import java.util.Arrays;
 import java.util.List;
@@ -53,7 +54,9 @@ public class Main {
 		
 	
 			
-		
+		static Cryptage define() {
+		System.out.print("Ce programme sert a crypter/decrypter vos messages selon votre frequence choisit !\n\n");
+		return (new Cryptage(90));
 		
 		
 		
