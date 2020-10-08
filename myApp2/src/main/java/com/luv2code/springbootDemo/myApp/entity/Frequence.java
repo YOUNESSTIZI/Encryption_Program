@@ -4,7 +4,7 @@ package com.luv2code.springbootDemo.myApp.entity;
 
 public class Frequence {
 
-	private int frequence ;
+	private int frequence = 90 ;
 	
 	public Frequence() {
 		

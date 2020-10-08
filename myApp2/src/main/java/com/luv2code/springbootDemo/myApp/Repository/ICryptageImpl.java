@@ -1,20 +1,21 @@
 package com.luv2code.springbootDemo.myApp.Repository;
-/*package com.luv2code.springbootDemo.myApp.DAO;
+
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.IntUnaryOperator;
 
-import com.luv2code.springbootDemo.myApp.entity.IFrequence;
+import com.luv2code.springbootDemo.myApp.entity.Frequence;
+
 
 
 public class ICryptageImpl implements ICryptage {
 
-	private IFrequence frequence ;
+	private Frequence frequence ;
 	private StringBuilder messageRecu;
 	
-	public ICryptageImpl(IFrequence frequence) {
+	public ICryptageImpl(Frequence frequence) {
 		super();
 		this.frequence = frequence;
 		this.messageRecu = new StringBuilder();
@@ -25,7 +26,9 @@ public class ICryptageImpl implements ICryptage {
 
 	
 	
-	 * cette méthode retourne le message aprrès avoir décrypter la liste des mots
+	 /*
+	  *  cette méthode retourne le message aprrès avoir décrypter la liste des mots
+	  */  
 	 
 	@Override
 	public String decrypt(List<String> code) {
@@ -44,12 +47,13 @@ public class ICryptageImpl implements ICryptage {
 	
 	
 	
-	 * cette méthode retourne la liste des mots après le cryptage.
-	 
+	/*
+	* cette méthode retourne la liste des mots après le cryptage.
+	 */
 	@Override
 	public String crypt(String message) { 
 		
-		List<String> cryptedList = new ArrayList();
+		List<String> cryptedList = new ArrayList<String>();
 		
 		for(String name : message.split(" ")) {
 			
@@ -61,7 +65,14 @@ public class ICryptageImpl implements ICryptage {
 			cryptedList.add(nameCrypted.toString());
 		}
 		
-		return cryptedList.toString();
+		StringBuilder trace = new StringBuilder() ;
+		
+		cryptedList.forEach(x->{
+			trace.append(x);
+			trace.append(" ");
+		}			
+		);
+		return trace.toString();
 		
 	}
 
@@ -69,7 +80,7 @@ public class ICryptageImpl implements ICryptage {
 
 
 
-*/
+
 
 
 
